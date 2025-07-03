@@ -12,7 +12,6 @@ def analyser_convergence(X, y, learning_rates=[0.0001, 0.001, 0.01, 0.1, 1.0, 3.
         perceptron.fit(X, y)
 
         plt.plot(perceptron.errors_, label=f"Taux d'apprentissage: {lr}", linestyle='-', marker='o')
-        # TODO: Tracer les courbes de convergence
         pass
     plt.xlabel('Époques')
     plt.ylabel("Erreurs")
