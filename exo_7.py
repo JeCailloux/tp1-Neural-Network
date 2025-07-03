@@ -1,16 +1,21 @@
+import numpy as np
+from matplotlib import pyplot as plt
+
+from perceptron_simple import PerceptronSimple
+
+
 def generer_donnees_separables(n_points=100, noise=0.1):
     """
     Génère deux classes de points linéairement séparables
     """
-    np.random.seed(42) # Réduit l'aléatoire pour avoir des résultats lissé 
+    np.random.seed(42)  # Réduit l'aléatoire pour avoir des résultats lissé
 
-
-    X1 = np.random.randn(n_points // 2, 2)*noise + np.array([2, 2]) 
-    X2 = np.random.randn(n_points // 2, 2)*noise + np.array([-2, -2])
-    X = np.vstack((X1, X2)) # Fusion des classes 1 et 2
+    X1 = np.random.randn(n_points // 2, 2) * noise + np.array([2, 2])
+    X2 = np.random.randn(n_points // 2, 2) * noise + np.array([-2, -2])
+    X = np.vstack((X1, X2))  # Fusion des classes 1 et 2
     y1 = np.ones(n_points // 2)
     y2 = np.zeros(n_points // 2)
-    y = np.hstack((y1, y2)) # Fusion des étiquettes 1 et 2   
+    y = np.hstack((y1, y2))  # Fusion des étiquettes 1 et 2
     # Mélange aléatoire des valeurs 
     indices = np.random.permutation(n_points)
     X = X[indices]
@@ -18,6 +23,7 @@ def generer_donnees_separables(n_points=100, noise=0.1):
     # Normalisation des données
     X = (X - np.mean(X, axis=0)) / np.std(X, axis=0)
     return X, y
+
 
 def visualiser_donnees(X, y, w=None, b=None, title="Données"):
     """
@@ -38,7 +44,8 @@ def visualiser_donnees(X, y, w=None, b=None, title="Données"):
     plt.title(title)
     plt.grid(True, alpha=0.3)
     plt.show()
-  
+
+
 X, y = generer_donnees_separables(n_points=200, noise=2.0)
 # Entraînement abdos pour Léo
 perceptron = PerceptronSimple(learning_rate=0.1)
