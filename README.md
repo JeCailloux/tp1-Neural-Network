@@ -144,6 +144,7 @@ Ce projet a permis de comprendre le perceptron, ses principes et ses limites. S�
 
 ---
 ![and](photo/2.png)
+![or](photo/3.png)
 ## Exercice 6
 
 - **Constatation ?**  
@@ -153,12 +154,12 @@ Ce projet a permis de comprendre le perceptron, ses principes et ses limites. S�
   Si les classes sont pas séparables avec une droite, alors le perceptron est useless. Faut un réseau plus complexe (au moins une couche cachée).
 
 ---
-![or](photo/3.png)
+![xor](photo/4.png)
 
 
 ## Exercice 7
 
-![xor](photo/4.png)
+![perceptron](photo/5.png)
 
 ## Exercice 8
 
@@ -175,7 +176,7 @@ Ce projet a permis de comprendre le perceptron, ses principes et ses limites. S�
   Trop de bruit = trop de dispersion = apprentissage difficile, surtout avec un taux trop élevé.
 
 ---
-
+![convergence](photo/6.png)
 ## Exercice 9
 
 - **Plusieurs perceptrons prédisent "oui" ?**  
@@ -188,7 +189,7 @@ Ce projet a permis de comprendre le perceptron, ses principes et ses limites. S�
   Les classes peu présentes se font oublier. Faut rééchantillonner ou ajuster les poids.
 
 ---
-
+![convergence](photo/7.png)
 ## Exercice 11
 
 - **Quand le perceptron converge-t-il ?**  
