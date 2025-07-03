@@ -217,4 +217,7 @@ Ce projet a permis de comprendre le perceptron, ses principes et ses limites. S�
   Oui oui oui. Toujours normaliser. Sinon les poids peuvent déconner et ralentir l’apprentissage.
 
 ---
+![perceptron](photo/8.png)
+![perceptron](photo/9.png)
+![perceptron](photo/10.png)
 
