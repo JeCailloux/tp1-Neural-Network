@@ -89,6 +89,11 @@ Ce projet a permis de comprendre le perceptron, ses principes et ses limites. S�
 
 # Exercices Perceptron – Résumés & Réponses
 
+
+## Exercice 1
+![heavyside](photo/1.png)
+
+
 ## Exercice 2
 
 - **Pourquoi la fonction de Heaviside c'est pas top pour l'apprentissage par gradient ?**  
