@@ -1,0 +1,88 @@
+Partie 1
+
+Exercice 1.1 - Questions d'analyse théorique :
+
+Que signifie concrètement le théorème d'approximation universelle ?
+
+Ce théorème dit qu’un réseau de neurones avec une seule couche cachée,
+s’il a assez de neurones, peut reproduire n’importe quelle fonction (ou presque),
+même des fonctions compliquées. Ça veut dire qu’en théorie,
+un réseau peut s’adapter à plein de problèmes, du moment qu’on lui donne assez de capacité.
+
+Ce théorème garantit-il qu'on peut toujours trouver les bons poids ?
+
+Non. Le théorème dit juste qu’il existe des poids qui marchent.
+Mais trouver ces bons poids avec l’apprentissage (le training) dépend de plein de choses :
+l’algorithme, l’initialisation, la base de données, le temps d’entraînement, etc...
+Donc on n’est pas sûr à 100 % de les trouver à chaque fois.
+
+Quelle est la différence entre "pouvoir approximer" et "pouvoir apprendre" ?
+
+"Pouvoir approximer", c’est dire qu’un réseau a la capacité de copier une fonction.
+"Pouvoir apprendre", c’est dire qu’il va réussir à le faire grâce à l’entraînement.
+Donc en gros : avoir la capacité egal pas réussir à s’en servir correctement.
+
+Pourquoi utilise-t-on souvent beaucoup plus de couches cachées en pratique ?
+
+Parce que plus on a de couches, plus le réseau peut comprendre des choses complexes et faire des calculs plus puissants.
+Avec plusieurs couches, on peut reconnaître des formes, des objets, ou des modèles dans les données.
+C’est surtout utile pour des trucs comme les images, le son, etc.
+
+En principe, vous avez déjà vu au lycée un autre type d’approximateur de fonctions, donner leurs noms ?
+
+Oui, au lycée on voit les polynômes, comme les polynômes de Taylor ou les interpolations polynomiales.
+Ce sont aussi des outils qui permettent d’approcher des fonctions compliquées.
+
+Exercice 1.2 - Expliquer la phrase suivante
+Le théorème d’approximation universelle affirme qu’un réseau profond peut exactement retrouver les données d’entraînement.
+
+Ca veut dire que si on donne toutes les données au réseau et qu’il est assez grand, alors il peut toutes les apprendre par cœur.
+Mais apprendre par cœur, ce n’est pas toujours bien !
+Ça peut faire du surapprentissage (overfitting), donc le réseau ne sera peut-être pas bon avec de nouvelles données qu’il ne connaît pas encore.
+
+Partie 2
+
+Exercice 2.2.1 : Voir CoucheNeurones.py
+
+Exercice 2.2.2 : Voir PerceptronMultiCouches.py
+
+Partie 3
+
+Exercice 3.1 : Voir test_xor.py
+
+Questions d'analyse :
+
+Le réseau arrive-t-il à résoudre XOR ? Avec quelle architecture minimale ?
+
+Oui, le réseau arrive à résoudre le problème du XOR.
+C’est un cas classique qu’un perceptron simple ne peut pas résoudre car il n’est pas linéairement séparable.
+L'architecture minimale qui fonctionne est :
+[2 entrées] → [2 neurones cachés] → [1 sortie]
+Avec 1 neurone caché seulement, ça ne marche pas.
+
+Comment le nombre de neurones cachés influence-t-il la convergence ?
+
+Si on a trop peu de neurones, le réseau n’a pas assez de capacité pour apprendre.
+Il met longtemps à converger, voire ne converge pas du tout.
+Si on met plus de neurones (ex : 3, 4...), le réseau peut apprendre plus vite et mieux au début.
+Mais trop en mettre peut aussi causer du surapprentissage (overfitting) ou de l’instabilité.
+
+
+Que se passe-t-il avec plusieurs couches cachées ?
+
+Ajouter des couches cachées supplémentaires (ex : [2, 3, 2, 1]) rend le réseau plus profond.
+Pour XOR, une seule couche cachée suffit.
+Ajouter plus de couches n’aide pas forcément, ça ralentit l’apprentissage et augmente la complexité.
+
+
+L'initialisation des poids a-t-elle une influence ? (tester d'autres types d'initialisations)
+
+Oui,
+Si les poids sont mal initialisés (par exemple tous à zéro), le réseau ne peut pas apprendre correctement.
+Une initialisation aléatoire simple peut marcher, mais donne des résultats variables.
+Des méthodes comme Xavier ou He sont meilleures, car elles évitent que les gradients deviennent trop grands ou trop petits.
+
+
+
+
+
