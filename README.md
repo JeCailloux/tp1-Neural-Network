@@ -3,7 +3,7 @@ lien du tp : https://sleek-think.ovh/enseignement/neural-network-perceptron/
 Voir README.md dans TP2 pour le rapport du 2eme TP
 
 
-TP 1
+## TP1 BALMES BASTIEN ET LEDUC LEO
 
 ## Objectifs du TP
 
