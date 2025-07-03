@@ -143,7 +143,7 @@ Ce projet a permis de comprendre le perceptron, ses principes et ses limites. S�
   Si tu utilises les mêmes poids au départ, tu retrouves la même solution.
 
 ---
-
+![and](photo/2.png)
 ## Exercice 6
 
 - **Constatation ?**  
@@ -153,6 +153,12 @@ Ce projet a permis de comprendre le perceptron, ses principes et ses limites. S�
   Si les classes sont pas séparables avec une droite, alors le perceptron est useless. Faut un réseau plus complexe (au moins une couche cachée).
 
 ---
+![or](photo/3.png)
+
+
+## Exercice 7
+
+![xor](photo/4.png)
 
 ## Exercice 8
 
