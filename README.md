@@ -1,6 +1,9 @@
 lien du tp : https://sleek-think.ovh/enseignement/neural-network-perceptron/ 
 
-TP 1 : Voir README.md dans TP2 pour le rapport du deuxiemme tp
+Voir README.md dans TP2 pour le rapport du 2eme TP
+
+
+TP 1
 
 ## Objectifs du TP
 
